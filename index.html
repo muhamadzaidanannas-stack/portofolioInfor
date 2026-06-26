@@ -1,14 +1,855 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio -- Zaidan Annas" />
+  <title>Zaidan Annas — Web Developer</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
-    <center>
-    <h1>Hallo Dunia!</h1>
-    </center>
+  <div id="loader">
+    <div class="loader-name">Muhamad Zaidan Annas</div>
+    <div class="loader-progress">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">Z.A</a>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Work</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#experience" class="nav-link">Experience</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 0.75rem">
+        <a href="#contact" class="nav-cta">Contact</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div id="mobile-nav">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#portfolio" class="mobile-link">Work</a>
+    <a href="#certificates" class="mobile-link">Certificates</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <section id="hero">
+    <!-- Left -->
+    <div class="hero-left container" style="padding-left: max(2rem, calc((100vw - 1160px) / 2 + 2rem))">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-dot"></div>
+        <span class="t-eyebrow">Web Developer</span>
+      </div>
+
+      <h1 class="hero-title">
+        Portofolio<br />
+        <em>Web</em><br />
+        Development.
+      </h1>
+
+      <p class="hero-desc">
+        Halo, saya <strong>Zaidan Annas</strong>. Saya adalah seorang developer yang percaya bahwa arsitektur sistem
+        yang kokoh dan kecerdasan buatan yang adaptif bukan dua hal yang terpisah.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn-solid">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          View Portfolio
+        </a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+
+      <div class="hero-meta">
+        <div>
+          <span class="hero-stat-num">1+</span>
+          <div class="hero-stat-label">Projects</div>
+        </div>
+        <div style="width: 1px; background: var(--paper-3); align-self: stretch"></div>
+        <div>
+          <span class="hero-stat-num">1yr</span>
+          <div class="hero-stat-label">Experience</div>
+        </div>
+        <div style="width: 1px; background: var(--paper-3); align-self: stretch"></div>
+        <div>
+          <span class="hero-stat-num">1+</span>
+          <div class="hero-stat-label">Certificates</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="hero-right">
+      <div class="hero-photo-bg"></div>
+      <div class="hero-photo-frame">
+        <img src="aset/card-zaidan.jpeg" alt="Zaidan Annas" loading="eager" />
+        <div class="hero-photo-label">
+          <div class="mono">Available for work</div>
+          <div class="big">Bogor, Indonesia 📍</div>
+        </div>
+        <!-- <div class="hero-photo-badge">
+          ✓ Open to freelance<br />&amp; full-time roles
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section-alt">
+    <div class="section-number">01</div>
+    <div class="container">
+      <div class="grid-2" style="gap: 5rem; align-items: center">
+        <!-- Image -->
+        <div class="about-img-wrap reveal-l">
+          <img src="aset/card-zaidan.jpeg" alt="Working" />
+          <div class="about-img-accent">
+            <span class="num">1</span>
+            <span class="lbl">Tahun<br />Pembelajaran</span>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="reveal-r">
+          <div class="section-header">
+            <div class="line">
+              <span class="t-eyebrow">About Me</span>
+            </div>
+            <h2 class="t-heading">
+              Seorang developer<br /><em style="
+                    font-family: var(--font-display);
+                    font-style: italic;
+                    color: var(--accent);
+                  ">yang peduli detail.</em>
+            </h2>
+            <p class="t-body desc" style="margin-top: 1rem">
+              Saya adalah seorang pelajar yang berfokus pada pengembangan perangkat lunak dan eksplorasi teknologi baru.
+              Saat ini, saya sedang mengasah kemampuan untuk mewujudkan aspirasi saya menjadi seorang Full-stack
+              Developer dan AI Engineer.
+              Saya percaya bahwa teknologi yang hebat tidak hanya tentang kode yang rumit, melainkan tentang bagaimana
+              logika
+              dan kecerdasan buatan dapat bekerja sama menciptakan solusi yang terasa sederhana, fungsional, dan tepat
+              guna.
+            </p>
+          </div>
+
+          <div class="about-facts">
+            <div class="fact-item">
+              <div class="fact-label">Nama</div>
+              <div class="fact-value">Zaidan Annas</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-label">Lokasi</div>
+              <div class="fact-value">Bogor, Indonesia</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-label">Pendidikan</div>
+              <div class="fact-value">Teknologi Informasi/PPLG, Wikrama</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-label">Pengalaman</div>
+              <div class="fact-value">1 Tahun</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-label">Fokus</div>
+              <div class="fact-value">Web</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-label">Email</div>
+              <div class="fact-value">muhamadzaidanannas@smkwikrama.sch.id</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem">
+            <a href="#" class="btn-solid" style="display: inline-flex" onclick="
+                  alert('Mengunduh CV...');
+                  return false;
+                ">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M7 2v7M4 6l3 3 3-3M2 10v1a1 1 0 001 1h8a1 1 0 001-1v-1" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-number">02</div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="line">
+          <span class="t-eyebrow">Skills & Expertise</span>
+        </div>
+        <h2 class="t-heading">
+          Keahlian yang<br /><em style="
+                font-family: var(--font-display);
+                font-style: italic;
+                color: var(--accent);
+              ">saya kuasai.</em>
+        </h2>
+      </div>
+
+      <div class="skills-layout">
+        <!-- Progress bars -->
+        <div class="skill-bars reveal-l">
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">HTML & CSS</span>
+              <span class="skill-bar-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">JavaScript</span>
+              <span class="skill-bar-pct">40%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="40"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">UI/UX Design</span>
+              <span class="skill-bar-pct">50%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="50"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">Figma</span>
+              <span class="skill-bar-pct">50%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="50"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-bar-name">PHP & MySQL</span>
+              <span class="skill-bar-pct">40%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="40"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill cards -->
+        <div class="skill-cards reveal-r" id="skill-cards-wrap">
+          <div class="skill-card">
+            <span class="skill-card-icon">🌐</span>
+            <div class="skill-card-name">HTML5</div>
+            <div class="skill-card-level">Beginner</div>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card-icon">🎨</span>
+            <div class="skill-card-name">CSS3</div>
+            <div class="skill-card-level">Beginner</div>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card-icon">⚡</span>
+            <div class="skill-card-name">JavaScript</div>
+            <div class="skill-card-level">Beginner</div>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card-icon">🔷</span>
+            <div class="skill-card-name">Figma</div>
+            <div class="skill-card-level">Beginner</div>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card-icon">🧠</span>
+            <div class="skill-card-name">Problem<br />Solving</div>
+            <div class="skill-card-level">Middle</div>
+          </div>
+          <div class="skill-card">
+            <span class="skill-card-icon">🗄️</span>
+            <div class="skill-card-name">MySQL</div>
+            <div class="skill-card-level">Beginner</div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO ==================== -->
+  <section id="portfolio" class="section section-alt">
+    <div class="section-number">03</div>
+    <div class="container">
+      <div class="section-header reveal" style="
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 1rem;
+          ">
+        <div>
+          <div class="line">
+            <span class="t-eyebrow">Selected Work</span>
+          </div>
+          <h2 class="t-heading">
+            Project<br /><em style="
+                  font-family: var(--font-display);
+                  font-style: italic;
+                  color: var(--accent);
+                ">Milik Saya.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="filter-row reveal">
+        <button class="filter-pill active" data-f="all">All</button>
+        <button class="filter-pill" data-f="website">Website</button>
+        <button class="filter-pill" data-f="mobile">Mobile</button>
+        <button class="filter-pill" data-f="ui">UI Design</button>
+        <button class="filter-pill" data-f="backend">Backend</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <div class="project-card reveal" data-cat="website">
+          <div class="project-thumb">
+            <span class="project-cat-badge">Website</span>
+            <img src="aset/project/project1.png" alt="Website Sejarah" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://muhamadzaidanannas-stack.github.io/Web.Sejarah/" target="_blank"
+                class="overlay-btn overlay-btn-solid">Live Demo</a>
+              <a href="https://github.com/muhamadzaidanannas-stack/Web.Sejarah" target="_blank"
+                class="overlay-btn overlay-btn-outline">Source</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Website Sejarah</h3>
+            <p class="project-desc">
+              Website edukasi digital yang menyajikan linimasa sejarah secara interaktif dan responsif,
+              dikembangkan khusus untuk memenuhi tugas sekolah dalam mengeksplorasi peristiwa masa lalu secara modern.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-cat="website">
+          <div class="project-thumb">
+            <span class="project-cat-badge">Website</span>
+            <img src="aset/project/project2.png" alt="Website Dicoding" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://muhamadzaidanannas-stack.github.io/Dicoding/" target="_blank"
+                class="overlay-btn overlay-btn-solid">Live Demo</a>
+              <a href="https://github.com/muhamadzaidanannas-stack/Dicoding" target="_blank"
+                class="overlay-btn overlay-btn-outline">Source</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Dicoding Project</h3>
+            <p class="project-desc">
+              Sebuah proyek web statis yang dikembangkan sebagai bentuk pemenuhan tugas akhir
+              (submission) guna memverifikasi kompetensi pemrograman web pada platform Dicoding.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-cat="website">
+          <div class="project-thumb">
+            <span class="project-cat-badge">Website</span>
+            <img src="aset/project/project3.png" alt="Website RevoU" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://muhamadzaidanannas-stack.github.io/CodingCamp-01Dec25-ZaidanAnnas/" target="_blank"
+                class="overlay-btn overlay-btn-solid">Live Demo</a>
+              <a href="https://github.com/muhamadzaidanannas-stack/CodingCamp-01Dec25-ZaidanAnnas" target="_blank"
+                class="overlay-btn overlay-btn-outline">Source</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">RevoU Mini Project</h3>
+            <p class="project-desc">
+              Dokumentasi dan implementasi pengodean berbasis web yang dirancang khusus
+              untuk memenuhi kriteria evaluasi serta standarisasi kompetensi dari RevoU.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-cat="website">
+          <div class="project-thumb">
+            <span class="project-cat-badge">Website</span>
+            <img src="aset/project/project4.png" alt="Website CRUD" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://muhamadzaidanannas-stack.github.io/STSGenap2026/" target="_blank"
+                class="overlay-btn overlay-btn-solid">Live Demo</a>
+              <a href="https://github.com/muhamadzaidanannas-stack/STSGenap2026" target="_blank"
+                class="overlay-btn overlay-btn-outline">Source</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Project STS Genap</h3>
+            <p class="project-desc">
+              Dokumentasi dan implementasi proyek pemrograman sistem CRUD berbasis kelompok bertiga
+              yang disusun sebagai bentuk evaluasi praktik pada Sumatif Tengah Semester (STS) Genap.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-cat="website">
+          <div class="project-thumb">
+            <span class="project-cat-badge">Website</span>
+            <img src="aset/project/project5.png" alt="Website Ipas" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://project-ipas.vercel.app/" target="_blank" class="overlay-btn overlay-btn-solid">Live
+                Demo</a>
+              <a href="#" class="overlay-btn overlay-btn-outline">Source</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Project IPAS Digital</h3>
+            <p class="project-desc">
+              Situs web interaktif yang disusun oleh kelompok kerja beranggotakan enam orang guna
+              mendokumentasikan hasil riset dan analisis kontekstual pada proyek pembelajaran IPAS.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-cat="ui">
+          <div class="project-thumb">
+            <span class="project-cat-badge">UI Design</span>
+            <img src="aset/project/project6.png" alt="UI/UX" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://rp.mockplus.com/run/oo4bhEg9km/oEkW-5GX0j/JJALK0jAKfz?cps=expand&rps=expand&nav=1&ha=0&la=0&fc=1&dt=iphoneX&out=0&rt=1&as=true"
+                target="_blank" class="overlay-btn overlay-btn-solid">Live Demo</a>
+              <a href="https://rp.mockplus.com/run/oo4bhEg9km/oEkW-5GX0j/JJALK0jAKfz?cps=expand&rps=expand&nav=1&ha=0&la=0&fc=1&dt=iphoneX&out=0&rt=1&as=true"
+                target="_blank" class="overlay-btn overlay-btn-outline">Source</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">UI/UX Prototype Project</h3>
+            <p class="project-desc">
+              Sebuah purwarupa (prototype) interaktif yang dirancang secara kolaboratif oleh kelompok tiga orang
+              guna menyusun cetak biru (blueprint) antarmuka dan pengalaman pengguna (UI/UX) aplikasi berbasis mobile.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-pill">MockUp</span>
+              <span class="tech-pill">Canva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATES ==================== -->
+  <section id="certificates" class="section">
+    <div class="section-number">04</div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="line">
+          <span class="t-eyebrow">Certifications</span>
+        </div>
+        <h2 class="t-heading">
+          Sertifikat &<br /><em style="
+                font-family: var(--font-display);
+                font-style: italic;
+                color: var(--accent);
+              ">pencapaian.</em>
+        </h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal" onclick="
+              openCertModal(
+                'Sertifikat Nevada Standards',
+                'Nevada',
+                '2025',
+                'aset/sertifikat/sertifikat nevada standards.jpg'
+              )
+            ">
+          <div class="cert-visual">
+            <span><img src="aset/sertifikat/sertifikat nevada standards.jpg" alt="sertifikat"></span>
+            <div class="cert-zoom-hint">VIEW DETAIL</div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Sertifikat Nevada Standards</div>
+            <div class="cert-meta">
+              <span class="cert-provider">Nevada</span><span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" onclick="openCertModal(
+             'Sertifikat Nevada Standards',
+             'Nevada', 
+             '2025', 
+             'aset/sertifikat/sertifikatNS.jpg'
+              )
+            ">
+          <div class="cert-visual">
+            <span><img src="aset/sertifikat/sertifikatNS.jpg" alt="sertifikat"></span>
+            <div class="cert-zoom-hint">VIEW DETAIL</div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Sertifikat Nevada Standards</div>
+            <div class="cert-meta">
+              <span class="cert-provider">Nevada</span><span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" onclick="
+              openCertModal(
+                'Sertifikat RevoU',
+                'RevoU',
+                '2025',
+                'aset/sertifikat/sertifikat RevoU.png'
+              )
+            ">
+          <div class="cert-visual">
+            <span><img src="aset/sertifikat/sertifikat RevoU.png" alt="sertifikat"></span>
+            <div class="cert-zoom-hint">VIEW DETAIL</div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Sertifikat RevoU</div>
+            <div class="cert-meta">
+              <span class="cert-provider">RevoU</span><span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" onclick="
+              openCertModal(
+                'Sertifikat Dicoding',
+                'Dicoding',
+                '2026',
+                'aset/sertifikat/SertifikatDicoding.png',
+              )
+            ">
+          <div class="cert-visual">
+            <span><img src="aset/sertifikat/SertifikatDicoding.png" alt="sertifikat"></span>
+            <div class="cert-zoom-hint">VIEW DETAIL</div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Sertifikat Dicoding</div>
+            <div class="cert-meta">
+              <span class="cert-provider">Dicoding</span><span class="cert-year">2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" onclick="
+              openCertModal(
+                'sertifikat K3LH', 
+                'ILO', 
+                '2026', 
+                'aset/sertifikat/sertifikatK3LH.png'
+              )
+            ">
+          <div class="cert-visual">
+            <span><img src="aset/sertifikat/sertifikatK3LH.png" alt="sertifikat"></span>
+            <div class="cert-zoom-hint">VIEW DETAIL</div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">sertifikat K3LH</div>
+            <div class="cert-meta">
+              <span class="cert-provider">ILO</span><span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" onclick="
+              openCertModal(
+                'sertifikat ComDigi',
+                'ComDigi',
+                '2025',
+                'aset/sertifikat/sertifikatComDigi.png'
+              )
+            ">
+          <div class="cert-visual">
+            <span><img src="aset/sertifikat/sertifikatComDigi.png" alt="sertifikat"></span>
+            <div class="cert-zoom-hint">VIEW DETAIL</div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-name">Sertifikat ComDigi</div>
+            <div class="cert-meta">
+              <span class="cert-provider">ComDigi</span><span class="cert-year">2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cert Modal -->
+  <div id="cert-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeCertModal()">✕</button>
+      <span class="modal-icon" id="m-icon"></span>
+      <div class="modal-title" id="m-title"></div>
+      <div class="modal-sub" id="m-sub"></div>
+      <span class="modal-tag" id="m-year"></span>
+    </div>
+  </div>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="section section-alt">
+    <div class="section-number">05</div>
+    <div class="container">
+      <div style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+          ">
+        <div class="reveal-l">
+          <div class="section-header">
+            <div class="line"><span class="t-eyebrow">Experience</span></div>
+            <h2 class="t-heading">
+              Perjalanan<br /><em style="
+                    font-family: var(--font-display);
+                    font-style: italic;
+                    color: var(--accent);
+                  ">karier saya.</em>
+            </h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div class="timeline-org">Bandung</div>
+                  <span class="timeline-date">2027 — Now</span>
+                </div>
+                <div class="timeline-role">Developer</div>
+                <p class="timeline-desc">
+                  "On Going"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-r">
+          <div class="section-header">
+            <div class="line">
+              <span class="t-eyebrow">Education</span>
+            </div>
+            <h2 class="t-heading">
+              Pendidikan <br /><em style="
+                    font-family: var(--font-display);
+                    font-style: italic;
+                    color: var(--accent);
+                  ">saya.</em>
+            </h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div class="timeline-org">SMK Wikrama Bogor</div>
+                  <span class="timeline-date">2025 — Now</span>
+                </div>
+                <div class="timeline-role">PPLG</div>
+                <p class="timeline-desc">
+                  "Siswa SMK PPLG Kelas X dengan fokus kompetensi pada integrasi teknologi web (HTML,
+                  CSS, JavaScript, PHP-OOP) serta dasar-dasar manajemen database dan desain UI/UX."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section">
+    <div class="section-number">06</div>
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Left info -->
+        <div class="reveal-l">
+          <div class="t-eyebrow" style="
+                margin-bottom: 1.25rem;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+              ">
+            <span style="
+                  width: 32px;
+                  height: 1px;
+                  background: var(--accent-warm);
+                  display: block;
+                "></span>
+            Get In Touch
+          </div>
+          <h2 class="contact-info-title">
+            Mari<br />berkolaborasi,<br /><em>bersama.</em>
+          </h2>
+          <p class="contact-info-desc">
+            Punya project menarik atau sekadar ingin menyapa? Saya selalu
+            terbuka untuk diskusi dan peluang baru.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-row">
+              <div class="contact-icon-wrap">✉️</div>
+              <div>
+                <div class="contact-row-label">Email</div>
+                <div class="contact-row-val">muhamadzaidanannas@smkwikrama.sch.id</div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon-wrap">📱</div>
+              <div>
+                <div class="contact-row-label">WhatsApp</div>
+                <div class="contact-row-val">+62 858-8827-6407</div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon-wrap">📍</div>
+              <div>
+                <div class="contact-row-label">Lokasi</div>
+                <div class="contact-row-val">Bogor, Indonesia</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-small" style="
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-family: var(--font-mono);
+          ">
+            Find me on
+          </div>
+          <div class="social-row">
+            <a href="https://www.instagram.com/zaidan_annas?igsh=bGx1a2F5Nml1Nzlo" target="_blank" class="social-icon"
+              title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/muhamadzaidanannas-stack" target="_blank" class="social-icon" 
+              title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhamad-zaidan-a2115b387" target="_blank" class="social-icon" 
+              title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1BLQGuqo3h/" target="_blank" class="social-icon" 
+              title="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right form -->
+        <div class="reveal-r">
+          <div class="contact-form-wrap">
+            <h3 style="
+                  font-family: var(--font-display);
+                  font-size: 1.35rem;
+                  font-weight: 500;
+                  margin-bottom: 1.75rem;
+                  color: var(--ink);
+                ">
+              Kirim Pesan
+            </h3>
+            <div class="form-row-2">
+              <div>
+                <label class="form-label">Nama</label>
+                <input type="text" class="form-input" placeholder="Nama lengkap Anda" />
+              </div>
+              <div>
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" placeholder="email@contoh.com" />
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="form-label">Subjek</label>
+              <input type="text" class="form-input" placeholder="Topik pesan Anda" />
+            </div>
+            <div class="form-row">
+              <label class="form-label">Pesan</label>
+              <textarea class="form-textarea"
+                placeholder="Ceritakan kebutuhan Anda atau sekedar sapa saja..."></textarea>
+            </div>
+            <button class="form-submit" id="form-submit" onclick="handleSubmit()">
+              Kirim Pesan →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Zaidan Annas</div>
+        <p class="footer-quote">
+          "Good design is as little design as possible." — Dieter Rams
+        </p>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Work</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-copy">
+          © 2026 Zaidan Annas — Crafted with care in Bogor.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Back to top">
+    ↑
+  </button>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
